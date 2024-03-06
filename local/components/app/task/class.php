@@ -4,14 +4,13 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 class TaskList extends CBitrixComponent
 {
-    protected array $taskOrder = ['UF_TASKS_PRIORITY' => 'DESC'];
-    protected array $taskParams = ['TITLE', 'CREATED_DATE', 'RESPONSIBLE_ID', 'CREATED_BY', 'UF_TASKS_PRIORITY'];
-    protected array $tasksList = [];
-    protected array $changePriorityList = [];
+
 
     protected function prepareTasksValue(): object
     {
-        return CTasks::GetList($this->taskOrder, [], $this->taskParams);
+        $taskOrder = ['UF_TASKS_PRIORITY' => 'DESC'];
+        $taskParams = ['TITLE', 'CREATED_DATE', 'RESPONSIBLE_ID', 'CREATED_BY', 'UF_TASKS_PRIORITY'];
+        return CTasks::GetList($taskOrder, [], $taskParams);
     }
 
     protected function prepareUserValue(int $userID): string
@@ -37,16 +36,16 @@ class TaskList extends CBitrixComponent
 
     public function prepareTasksListData(): array
     {
+        $tasksList = [];
         if (CModule::IncludeModule("tasks")) {
             $res = $this->prepareTasksValue();
-
             while ($arTask = $res->GetNext()) {
                 $arTask['RESPONSIBLE_ID'] = $this->prepareUserValue($arTask['RESPONSIBLE_ID']);
                 $arTask['CREATED_BY'] = $this->prepareUserValue($arTask['CREATED_BY']);
-                $this->tasksList[] = $arTask;
+                $tasksList[] = $arTask;
             }
         }
-        return $this->tasksList;
+        return $tasksList;
     }
 
     protected function prepareHistoryChangeValue()
@@ -57,13 +56,14 @@ class TaskList extends CBitrixComponent
 
     public function prepareHistoryChangeListData(): array
     {
+        $changePriorityList = [];
         $historyChangePriority = $this->prepareHistoryChangeValue();
         while ($arrChangePriority = $historyChangePriority->Fetch()) {
             $arrChangePriority['UF_USER'] = $this->prepareUserValue($arrChangePriority['UF_USER']);
             $arrChangePriority['UF_TASK_ID'] = $this->prepareTaskTitle($arrChangePriority['UF_TASK_ID']);
-            $this->changePriorityList[] = $arrChangePriority;
+            $changePriorityList[] = $arrChangePriority;
         }
-        return $this->changePriorityList;
+        return $changePriorityList;
     }
 
     public function updateTaskFields(int $taskID, array $taskFields)

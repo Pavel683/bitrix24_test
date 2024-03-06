@@ -4,13 +4,12 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 class LeadList extends CBitrixComponent
 {
-    protected array $leadOrder = ['ID' => 'DESC'];
-    protected array $leadParams = ['TITLE', 'DATE_CREATE', 'ASSIGNED_BY_ID', 'STATUS_ID', 'UF_CRM_LEAD_ACCEPT'];
-    protected array $leadList = [];
 
     protected function prepareLeadsValue(): object
     {
-        return CCrmLead::GetListEx($this->leadOrder, [], false, false, $this->leadParams);
+        $leadOrder = ['ID' => 'DESC'];
+        $leadParams = ['TITLE', 'DATE_CREATE', 'ASSIGNED_BY_ID', 'STATUS_ID', 'UF_CRM_LEAD_ACCEPT'];
+        return CCrmLead::GetListEx($leadOrder, [], false, false, $leadParams);
     }
 
     protected function prepareUserValue(int $userID): string
@@ -40,12 +39,13 @@ class LeadList extends CBitrixComponent
 
     public function prepareLeadsListData(): array
     {
+        $leadList = [];
         $obRes = $this->prepareLeadsValue();
         while($arLead = $obRes->GetNext()) {
             $arLead['ASSIGNED_BY_ID'] = $this->prepareUserValue($arLead['ASSIGNED_BY_ID']);
-            $this->leadList[] = $arLead;
+            $leadList[] = $arLead;
         }
-        return $this->leadList;
+        return $leadList;
     }
 
     public function executeComponent()
@@ -56,7 +56,7 @@ class LeadList extends CBitrixComponent
                 $leadAcceptVal = $this->getActionVal($action);
                 $this->executeActionLead($leadID, $leadAcceptVal);
             }
-            LocalRedirect($APPLICATION->GetCurPageParam("", ['accept', 'reject']));
+            LocalRedirect($APPLICATION->GetCurPageParam("", ['accept', 'reject', 'login']));
         }
 
         if($this->startResultCache())
