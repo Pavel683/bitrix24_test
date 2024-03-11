@@ -110,7 +110,7 @@ class TaskList extends CBitrixComponent
                     $this->setLinePriorityTask($taskID, $action);
                 }
             }
-            LocalRedirect($APPLICATION->GetCurPageParam("", ['up', 'down']));
+            LocalRedirect($APPLICATION->GetCurPageParam("", ['up', 'down', 'login']));
         }
 
         if($this->startResultCache())

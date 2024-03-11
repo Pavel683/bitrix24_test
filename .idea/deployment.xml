@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="bitrix24" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="bitrix24">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/bitrix/www" local="$PROJECT_DIR$" web="/" />
+            <mapping local="" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/home/bitrix/www/ai" />
+            <excludedPath path="/home/bitrix/www/apconnect" />
+            <excludedPath path="/home/bitrix/www/auth" />
+            <excludedPath path="/home/bitrix/www/automation" />
+            <excludedPath path="/home/bitrix/www/bizproc" />
+            <excludedPath path="/home/bitrix/www/calendar" />
+            <excludedPath path="/home/bitrix/www/conference" />
+            <excludedPath path="/home/bitrix/www/configs" />
+            <excludedPath path="/home/bitrix/www/departments" />
+            <excludedPath path="/home/bitrix/www/desktop_app" />
+            <excludedPath path="/home/bitrix/www/devops" />
+            <excludedPath path="/home/bitrix/www/docs" />
+            <excludedPath path="/home/bitrix/www/images" />
+            <excludedPath path="/home/bitrix/www/include" />
+            <excludedPath path="/home/bitrix/www/kb" />
+            <excludedPath path="/home/bitrix/www/knowledge" />
+            <excludedPath path="/home/bitrix/www/crm/activity" />
+            <excludedPath path="/home/bitrix/www/crm/button" />
+            <excludedPath path="/home/bitrix/www/crm/catalog" />
+            <excludedPath path="/home/bitrix/www/crm/company" />
+            <excludedPath path="/home/bitrix/www/crm/configs" />
+            <excludedPath path="/home/bitrix/www/crm/contact" />
+            <excludedPath path="/home/bitrix/www/crm/deal" />
+            <excludedPath path="/home/bitrix/www/crm/documents" />
+            <excludedPath path="/home/bitrix/www/crm/events" />
+            <excludedPath path="/home/bitrix/www/crm/face-tracker" />
+            <excludedPath path="/home/bitrix/www/crm/invoice" />
+            <excludedPath path="/home/bitrix/www/crm/menu" />
+            <excludedPath path="/home/bitrix/www/crm/ml" />
+            <excludedPath path="/home/bitrix/www/crm/payment" />
+            <excludedPath path="/home/bitrix/www/crm/plugins" />
+            <excludedPath path="/home/bitrix/www/crm/product" />
+            <excludedPath path="/home/bitrix/www/crm/quote" />
+            <excludedPath path="/home/bitrix/www/crm/recyclebin" />
+            <excludedPath path="/home/bitrix/www/crm/reports" />
+            <excludedPath path="/home/bitrix/www/crm/start" />
+            <excludedPath path="/home/bitrix/www/crm/store" />
+            <excludedPath path="/home/bitrix/www/crm/stream" />
+            <excludedPath path="/home/bitrix/www/crm/tracking" />
+            <excludedPath path="/home/bitrix/www/crm/tunnels" />
+            <excludedPath path="/home/bitrix/www/crm/type" />
+            <excludedPath path="/home/bitrix/www/crm/webform" />
+            <excludedPath path="/home/bitrix/www/mail" />
+            <excludedPath path="/home/bitrix/www/market" />
+            <excludedPath path="/home/bitrix/www/marketing" />
+            <excludedPath path="/home/bitrix/www/marketplace" />
+            <excludedPath path="/home/bitrix/www/mobile" />
+            <excludedPath path="/home/bitrix/www/oauth" />
+            <excludedPath path="/home/bitrix/www/onec" />
+            <excludedPath path="/home/bitrix/www/page" />
+            <excludedPath path="/home/bitrix/www/pub" />
+            <excludedPath path="/home/bitrix/www/report" />
+            <excludedPath path="/home/bitrix/www/rpa" />
+            <excludedPath path="/home/bitrix/www/saleshub" />
+            <excludedPath path="/home/bitrix/www/search" />
+            <excludedPath path="/home/bitrix/www/services" />
+            <excludedPath path="/home/bitrix/www/shop" />
+            <excludedPath path="/home/bitrix/www/sitemap" />
+            <excludedPath path="/home/bitrix/www/sites" />
+            <excludedPath path="/home/bitrix/www/tasks" />
+            <excludedPath path="/home/bitrix/www/telephony" />
+            <excludedPath path="/home/bitrix/www/terminal" />
+            <excludedPath path="/home/bitrix/www/timeman" />
+            <excludedPath path="/home/bitrix/www/upload" />
+            <excludedPath path="/home/bitrix/www/workgroups" />
+            <excludedPath path="/home/bitrix/www/bitrix/activities" />
+            <excludedPath path="/home/bitrix/www/bitrix/admin" />
+            <excludedPath path="/home/bitrix/www/bitrix/blocks" />
+            <excludedPath path="/home/bitrix/www/bitrix/cache" />
+            <excludedPath path="/home/bitrix/www/bitrix/catalog_export" />
+            <excludedPath path="/home/bitrix/www/bitrix/components" />
+            <excludedPath path="/home/bitrix/www/bitrix/css" />
+            <excludedPath path="/home/bitrix/www/bitrix/fonts" />
+            <excludedPath path="/home/bitrix/www/bitrix/gadgets" />
+            <excludedPath path="/home/bitrix/www/bitrix/images" />
+            <excludedPath path="/home/bitrix/www/bitrix/js" />
+            <excludedPath path="/home/bitrix/www/bitrix/legal" />
+            <excludedPath path="/home/bitrix/www/bitrix/managed_cache" />
+            <excludedPath path="/home/bitrix/www/bitrix/mobileapp" />
+            <excludedPath path="/home/bitrix/www/bitrix/modules" />
+            <excludedPath path="/home/bitrix/www/bitrix/otp" />
+            <excludedPath path="/home/bitrix/www/bitrix/panel" />
+            <excludedPath path="/home/bitrix/www/bitrix/php_interface" />
+            <excludedPath path="/home/bitrix/www/bitrix/services" />
+            <excludedPath path="/home/bitrix/www/bitrix/sounds" />
+            <excludedPath path="/home/bitrix/www/bitrix/stack_cache" />
+            <excludedPath path="/home/bitrix/www/bitrix/templates" />
+            <excludedPath path="/home/bitrix/www/bitrix/themes" />
+            <excludedPath path="/home/bitrix/www/bitrix/tools" />
+            <excludedPath path="/home/bitrix/www/bitrix/updates" />
+            <excludedPath path="/home/bitrix/www/bitrix/webdav" />
+            <excludedPath path="/home/bitrix/www/bitrix/wizards" />
+            <excludedPath path="/home/bitrix/www/bitrix/.access.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/bitrix.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/composer-bx.json" />
+            <excludedPath path="/home/bitrix/www/bitrix/composer.json.example" />
+            <excludedPath path="/home/bitrix/www/bitrix/coupon_activation.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/footer.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/groupdav.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/header.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/index.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/license_key.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/p3p.xml" />
+            <excludedPath path="/home/bitrix/www/bitrix/routing_index.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/rss.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/spread.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/urlrewrite.php" />
+            <excludedPath path="/home/bitrix/www/bitrix/virtual_file_system.php" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="etp_info">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="etplst03">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lst02.camco">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="main_etp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>
